@@ -1,0 +1,52 @@
+{
+  "name": "sda-ruet",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "test": "tsx tests/unit/validation.test.ts && tsx tests/integration/auth-rbac.test.ts && tsx tests/integration/profile-management.test.ts && tsx tests/integration/alumni-workflow.test.ts && tsx tests/integration/committee-management.test.ts && tsx tests/integration/library-circulation.test.ts && tsx tests/integration/activities-events.test.ts && tsx tests/integration/donation-management.test.ts && tsx tests/integration/admin-control.test.ts && tsx tests/integration/cms-content.test.ts && tsx tests/integration/notification-system.test.ts && tsx tests/integration/audit-logging.test.ts && tsx tests/integration/security-audit.test.ts && tsx tests/integration/performance-audit.test.ts && tsx tests/integration/responsive-audit.test.ts",
+    "test:auth": "tsx tests/integration/auth-rbac.test.ts",
+    "test:profile": "tsx tests/integration/profile-management.test.ts",
+    "test:alumni": "tsx tests/integration/alumni-workflow.test.ts",
+    "test:committee": "tsx tests/integration/committee-management.test.ts",
+    "test:library": "tsx tests/integration/library-circulation.test.ts",
+    "test:events": "tsx tests/integration/activities-events.test.ts",
+    "test:donation": "tsx tests/integration/donation-management.test.ts",
+    "test:admin": "tsx tests/integration/admin-control.test.ts",
+    "test:cms": "tsx tests/integration/cms-content.test.ts",
+    "test:notifications": "tsx tests/integration/notification-system.test.ts",
+    "test:audit": "tsx tests/integration/audit-logging.test.ts",
+    "test:security": "tsx tests/integration/security-audit.test.ts",
+    "test:performance": "tsx tests/integration/performance-audit.test.ts",
+    "test:responsive": "tsx tests/integration/responsive-audit.test.ts"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.9.1",
+    "@supabase/ssr": "^0.12.5",
+    "@supabase/supabase-js": "^2.112.4",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.34.0",
+    "next": "16.3.3",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "react-hook-form": "^7.86.0",
+    "tailwind-merge": "^3.6.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.3",
+    "playwright": "^1.62.1",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.12",
+    "typescript": "^5"
+  }
+}
